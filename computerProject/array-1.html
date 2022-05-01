@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programs</title>
+    <link rel="stylesheet" href="CSS/exercise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="btn">
+        <a href="c-programs.html" class="previous round">&#8249;</a>
+        <a href="2d_array.html" class="next round">&#8250;</a>
+        <a href="index.html" class="fa fa-home"></a>
+    </div>
+    <div class="exc">
+        <div class="heading">
+            <span>C Program to stored the variable of array</span>
+        </div>
+        <div class="exc_1">
+            <div class="program_code">
+                <img src="/computerProject/C_Programs/10.png" alt="code">
+
+            </div>
+            <div class="program_btns">
+                <input type="button" value="Run" id="program-btnRun">
+            </div>
+            
+            <div class="next_btn">
+                <input type="button" value="Next" id="next-btn">
+            </div>
+
+            <div class="exc_2" id="output" style="display: none;">
+            <img src="/computerProject/C_Programs/10-output.png" alt="Output"></div>
+            
+        </div>
+    </div>
+
+    <script>
+            document.querySelector("body").style.backgroundColor = "black";
+        document.getElementById("next-btn").onclick = function() {
+            window.open("2d_array.html", "_self");
+        }
+        document.getElementById("output").style.display = "none";
+        document.getElementById("program-btnRun").onclick = function () {
+            if (document.getElementById("program-btnRun").value == "Run") {
+                document.getElementById("output").style.display = "flex";
+                document.getElementById("program-btnRun").value = "Close";
+            } else {
+                document.getElementById("output").style.display = "none";
+                document.getElementById("program-btnRun").value = "Run";
+            }
+        }
+    </script>
+</body>
+
+</html>

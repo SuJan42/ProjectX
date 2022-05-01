@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+body{
+    background-color: #353836 ;
+}
+.btn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 25px 20px;
+}
+
+.btn a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.round {
+    border-radius: 50%;
+}
+ .btn .fa-home{
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+ .btn .fa-home:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.heading span{
+    color: white;
+    font-size: 30px;
+}
+.program_btns {
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.program_btns  input {
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color:   crimson;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#program-btnRun:hover {
+    transform: scale(.9);
+    transition: .2s;
+    border: 2px solid crimson;
+}
+.program_code {
+    margin-top: 5px;
+    /* background-color: rgb(39, 44, 53); */
+    width: 71vw;
+    margin-left: 13vw;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.program_code img {
+    max-width: 90vw;
+    position: relative;
+    left: -20px;
+}
+.exc_2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(28, 33, 48); */
+    width: 71vw;
+    margin-left: 13vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.exc_2 img {
+    border-radius: 10px;
+    max-width: 90vw;
+    height: auto;
+    background-color: #353836;
+}
+.next_btn {
+    display: flex;
+    width: 90vw;
+    margin-left: 5vw;
+    justify-content: flex-end;
+}
+
+.next_btn input {
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color: crimson;
+    font-size: 20px;
+    margin-top: -40px;
+}
+
+.next_btn input:hover {
+    transform: scale(.9);
+    transition: .2s;
+    border: 2px solid crimson;
+}
+
+
+@media only screen and (max-width: 449px) {
+    .program_code img,
+    .output img {
+        max-width: calc(90vw - 20px);
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .program_code img,
+    .output img {
+        max-width: calc(70vw - 10px);
+    }
+}
+
+@media only screen and (min-width:610px) {
+    .program_code img,
+    .output img {
+        max-width: calc(70vw - 20px);
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .program_code img,
+    .output img {
+        max-width: calc(60vw - 20px);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .program_code img,
+    .output img {
+        max-width: calc(50vw - 20px);
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .program_code img,
+    .output img {
+        max-width: calc(40vw - 20px);
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .program_code pre span {
+        font-size: 4vw;
+    }
+}
+@media only screen and (max-width: 275px){
+      .fa-home{
+        margin-top: -65px;
+        margin-left: 5px;
+    }
+    .back a {
+        padding: 8px 16px;
+        margin: 25px 10px;
+    }
+}
